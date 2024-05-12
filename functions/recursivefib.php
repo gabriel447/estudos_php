@@ -7,6 +7,6 @@ function fibo($numero){
      return (fibo($numero-1) + fibo($numero-2));
  }
 
- echo fibo(20);
+ echo "fibo(20) ";
 
 ?>
