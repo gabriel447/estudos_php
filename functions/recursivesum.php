@@ -2,7 +2,7 @@
 
 function recursiveFunction($num)
 {
-    if ($num != 100) {
+    if ($num!=100) {
         echo "$num ";
         recursiveFunction(++$num);
     }
