@@ -1,19 +1,20 @@
 <?php
 
 function abaixoOuCinquenta($produto) {
-    if (isset($produto['valor']) && $produto['valor'] <= 50) {
-        return $produto['nome'];
+    if ($produto <= 50) {
+        return true;
     }
+    return false;
 }
 
 $lista = [
-    ['nome' => 'Produto A', 'valor' => 10],
-    ['nome' => 'Produto B', 'valor' => 40],
-    ['nome' => 'Produto C', 'valor' => 50],
-    ['nome' => 'Produto D', 'valor' => 70],
-    ['nome' => 'Produto E', 'valor' => 90],
-    ['nome' => 'Produto F', 'valor' => 30],
-    ['nome' => 'Produto G', 'valor' => 20]
+    10,
+    40,
+    50,
+    70,
+    90,
+    30,
+    20
 ];
 
 $produtosEconomicos = array_filter($lista, "abaixoOuCinquenta");
