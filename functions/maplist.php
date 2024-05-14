@@ -1,13 +1,13 @@
 <?php
 
-function somarBonus($valor) {
-   return $valor * 2; // 
+function investir($valor) {
+   return $valor * 100;
 }
 
-$valores = [10,90,200,300,15,1200]; 
+$investimentos = [10,90,200,300,15,1200]; 
 
-$contaTotal = array_map("somarBonus", $valores);
+$resultado = array_map("investir", $investimentos);
 
-print_r($contaTotal);
+print_r($resultado);
 
 ?>
