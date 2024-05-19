@@ -8,5 +8,3 @@ function fat($numero){
  }
 
  echo fat(9);
-
-?>

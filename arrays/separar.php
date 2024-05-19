@@ -9,5 +9,3 @@ function separar($input) {
 }
 
 echo separar($input);
-
-?>

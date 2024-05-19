@@ -14,5 +14,3 @@ if (in_array($personagemBuscado, $personagensGameOfThrones)) {
 } else {
     echo "O personagem $personagemBuscado não está na série Game of Thrones.";
 }
-
-?>

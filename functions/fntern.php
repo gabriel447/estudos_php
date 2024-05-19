@@ -8,5 +8,3 @@ if ($jovem) {
 } else {
     echo "Não vai ganhar presente do papai noel.";
 }
-
-?>

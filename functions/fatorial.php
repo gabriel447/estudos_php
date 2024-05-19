@@ -9,5 +9,3 @@ function fatorial($num) {
 }
 
 echo fatorial(5);
-
-?>

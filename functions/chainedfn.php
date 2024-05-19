@@ -22,5 +22,3 @@ function executar($a, $b, $op) {
 }
 
 echo executar(10, 10, '+');
-
-?>

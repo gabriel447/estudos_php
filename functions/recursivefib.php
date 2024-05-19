@@ -8,5 +8,3 @@ function fibo($numero){
  }
 
  echo fibo(20);
-
-?>

@@ -20,5 +20,3 @@ $lista = [
 $produtosEconomicos = array_filter($lista, "abaixoOuCinquenta");
 
 print_r($produtosEconomicos);
-
-?>

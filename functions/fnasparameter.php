@@ -18,5 +18,3 @@ function executar($a, $b, $op, $func) {
 }
 
 executar(11, 11, '+', $func);
-
-?>

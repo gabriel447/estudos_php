@@ -8,5 +8,3 @@ $novas = array_map(function($nota) {
 }, $notas);
 
 echo implode(", ", $novas);
-
-?>

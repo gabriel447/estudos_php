@@ -24,5 +24,5 @@ class Endereco {
 
 $endereco = new Endereco('Xaxim', 'Curitiba');
 $endereco->getAtributos();
-unset($endereco);
+// unset($endereco);
 $endereco->getAtributos();

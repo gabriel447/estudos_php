@@ -7,5 +7,3 @@ function soma($a) {
 }
 
 echo soma(13)(3);
-
-?>

@@ -14,5 +14,3 @@ $indiceSorteado = rand(0, count($sonhoviajar) - 1);
 $paisSorteado = $sonhoviajar[$indiceSorteado];
 
 echo "O país sorteado para sua próxima viagem é: ". $paisSorteado;
-
-?>

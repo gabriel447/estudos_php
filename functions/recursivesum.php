@@ -8,5 +8,3 @@ function recursiveFunction($num)
     }
 }
 recursiveFunction(10);
-
-?>

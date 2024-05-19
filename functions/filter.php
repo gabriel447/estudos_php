@@ -7,8 +7,6 @@ function aprovados($nota) {
     return $nota >= 7;
 }
 
-$finais = array_filter($notas, aprovados);
+$finais = array_filter($notas, 'aprovados');
 
 print_r($finais);
-
-?>
