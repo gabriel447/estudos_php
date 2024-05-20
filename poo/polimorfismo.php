@@ -10,29 +10,21 @@ abstract class Pessoa {
     }
 
     abstract public function demonstrarHabilidade();
-
-    public function apresentar() {
-        return "Olá, meu nome é {$this->nome} e eu tenho {$this->idade} anos.";
-    }
 }
 
 class Professor extends Pessoa {
     public function demonstrarHabilidade() {
-        return "Eu ensino matemática Meu nome é {$this->nome} e tenho {$this->idade} anos.";
+        return "Meu nome é {$this->nome}, tenho {$this->idade} anos e ensino matemática.\n";
     }
 }
 
 class Aluno extends Pessoa {
     public function demonstrarHabilidade() {
-        return "Eu aprendo matemática Meu nome é {$this->nome} e tenho {$this->idade} anos.";
+        return "Meu nome é {$this->nome}, tenho {$this->idade} anos e estudo matemática.\n";
     }
 }
 
-$professor = new Professor("João", 35);
-$aluno = new Aluno("Maria", 18);
-
-echo $professor->apresentar();
+$professor = new Professor("Diego", 31);
+$aluno = new Aluno("Gabriel", 30);
 echo $professor->demonstrarHabilidade();
-
-echo $aluno->apresentar();
 echo $aluno->demonstrarHabilidade();
