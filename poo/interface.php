@@ -43,3 +43,8 @@ $dog->comer();
 $dog->latir();
 $cat->comer();
 $cat->miar();
+
+var_dump($dog instanceof Animal);
+var_dump($cat instanceof Animal);
+var_dump($dog instanceof Gato);
+var_dump($cat instanceof Cachorro);
