@@ -10,7 +10,7 @@ trait JogarLoL {
 trait JogarCS {
     private $time;
 
-    public function jogar($time) {
+    public function jogar() {
         echo "Jogando de doze no time de terroristas\n";
     }
 }
