@@ -19,5 +19,9 @@ class Player {
     }
 }
 
+// os traits podem ser usados como uma classe porém com múltiplas heranças
+// devemos usar a nomeclatura 'use' para informar qual trait a clase vai usar
+// quando os metodos possuem o mesmo nome usamos o insteadOf e o as para resolver
+
 $player = new Player();
 $player->jogarJungle();
