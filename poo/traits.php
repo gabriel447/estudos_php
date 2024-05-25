@@ -1,15 +1,12 @@
 <?php
 
 trait JogarLoL {
-
     public function jogar() {
-        echo "Jogando na jungle\n";
+        echo "Jogando lolzinho na jungle\n";
     }
 }
 
 trait JogarCS {
-    private $time;
-
     public function jogar() {
         echo "Jogando de doze no time de terroristas\n";
     }
@@ -17,15 +14,10 @@ trait JogarCS {
 
 class Player {
     use JogarLoL, JogarCS {
-        JogarLoL::jogar as jogarLoL;
-        JogarCS::jogar as jogarCS;
-        JogarLoL::jogar insteadOf JogarCS;
-    }
-
-    public function jogar() {
-        $this->jogarLoL(); 
+        JogarCS::jogar insteadOf JogarLoL;
+        JogarLoL::jogar as jogarJungle;
     }
 }
 
 $player = new Player();
-$player->jogar(); 
+$player->jogarJungle();
