@@ -31,6 +31,10 @@ class Crianca extends Pessoa
     }
 }
 
+// classes abstratas podem ter metodos completos ou abstratos
+// mas a classe concreta precisa ter todos os metodos completos..
+// interface 0%, abstract 50%, concret class 100%
+
 $crianca = new Crianca('Gustavo', 10);
 $crianca->setNome('Gabriel');
 $crianca->gostadejogar();
