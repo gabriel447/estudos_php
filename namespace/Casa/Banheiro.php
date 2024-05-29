@@ -3,6 +3,6 @@ namespace Casa;
 
 class Banheiro {
     public function cagar() {
-        echo "Estou cagando..";
+        echo "Estou apurado, vou cagar.."."\n";
     }
 }
