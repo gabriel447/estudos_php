@@ -1,5 +1,7 @@
 <?php
 
+// no modo estatico não é possível criar instâncias de objetos..
+
 class Carro 
 {
     private static $cor = 'Amarela';
