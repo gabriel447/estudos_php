@@ -1,7 +1,7 @@
 <?php
 
-// final não serve para atributos, somente para metodos e classes
-// quando uma classe é setada para final ela nao pode ser herdada e nem instanciada
+// o static casa bem com o final, protege a classe de ser instanciada e herdada.
+// sendo possivel somente a chamada e com a sintaxe curta do static fica melhor..
 
 final class Jogo {
     private static $nome = 'Mario';
@@ -24,4 +24,3 @@ final class Jogo {
 echo Jogo::getNome(). "\n";
 echo Jogo::getTipo(). "\n";
 echo Jogo::getNivel(). "\n";
-
