@@ -1,5 +1,7 @@
 <?php
 
+// o abstract se aplica tambem para atributos e não somente para funções.
+
 abstract class Comida {
     public $peso;
 }
