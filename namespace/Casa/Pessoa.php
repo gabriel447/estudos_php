@@ -1,14 +1,10 @@
 <?php
 namespace Casa;
 
-// temos as 4 formas de extender um arquivo:
-// no include se algo der erro a aplicaçao nao para
-// no require a aplicaçao para..
-// nos casos do once, evitamos que o arquivo seja injetado mais de uma vez..
+// include = warning (não para a aplicação)
+// require = fatal error (para a aplicação)
+// _once = previne que seja carregado mais de uma vez
 
-// include 'Banheiro.php';
-// include_once 'Banheiro.php';
-// require 'Banheiro.php';
 require_once 'Banheiro.php';
 
 class Pessoa extends Banheiro {}
