@@ -29,5 +29,5 @@ class Comprador extends Carro
     }
 }
 
-$venda = new Comprador('Amarelo', '2024');
+$venda = new Comprador('Amarela', '2024');
 $venda->comprando();
