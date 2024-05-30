@@ -13,7 +13,7 @@ use function \Aritmetica\intdiv;
 
 //try - bloco de codigo que pode gerar um erro..
 try { 
-	echo intdiv(8, 3) . '<br>'; 
+	echo intdiv(8, 3) . "\n"; 
 }
 //catch - se der erro retorna uma exceçao.
 //parâmetro - tipo de erro que quer tratar.
@@ -21,17 +21,17 @@ try {
 //Error é para coisas mais graves.
 // quando uma exceçao é lançada o código seguinte não é executado, a aplicação para!!
 catch(\Aritmetica\NaoInteiroException $e) { 
-	echo 'Resultado nao é um numero inteiro<br>'; 
+	echo 'Resultado não é um número inteiro' . "\n"; 
 } 
 
 try { 
-	echo intdiv(8, 0) . '<br>'; 
+	echo intdiv(8, 0) . "\n"; 
 } catch(DivisionByZeroError $e) { 
-	echo 'Divisao por zero<br>'; 
+	echo 'Divisão por zero' . "\n"; 
 } 
 
-echo intdiv(8, 2) . '<br>'; 
-echo \intdiv(8, 2) . '<br>'; 
-echo \intdiv(8, 3) . '<br>';
+echo intdiv(8, 2) . "\n"; 
+echo \intdiv(8, 2) . "\n"; 
+echo \intdiv(8, 3) . "\n";
 
 //finally, executa independente, igual o default do switch/case 
