@@ -1,6 +1,8 @@
 <?php
 
 // declarando varios contextos e chamando as constantes de cada namespace..
+// usar o caminho do __NAMESPACE__ pra setar,
+// pq no servidor vai ser diferente do seu local e fazer isso evitará conflitos..
 
 namespace home;
 echo __DIR__ . "\n";
@@ -14,9 +16,6 @@ const constante = 456;
 namespace home\um\dois;
 echo __NAMESPACE__ . "\n";
 const constante = 789;
-
-// essa sintaxe só funciona na IDE
-// echo constant('\\' . __NAMESPACE__ . '\constante');
 
 echo \home\constante;
 echo \home\um\constante;
