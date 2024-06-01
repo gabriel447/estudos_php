@@ -13,3 +13,6 @@ echo $dataHora->format('d-m-Y')."\n";
 $fusoHorarioBrasilia = new DateTimeZone('America/Sao_Paulo');
 $dataHora->setTimezone($fusoHorarioBrasilia);
 echo $dataHora->format('d-m-Y H:i:s T')."\n";
+
+// https://www.php.net/manual/pt_BR/book.datetime.php
+// https://www.php.net/manual/pt_BR/ref.datetime.php
