@@ -1,7 +1,5 @@
 <?php
 
-//esse codigo só funciona no htdocs pois tem html
-
 print_r($_FILES);
 
 if($_FILES && $_FILES['arquivo']) {
